@@ -1,0 +1,13 @@
+public class Recrussion{
+    public static void printNo(int n){
+        if(n > 0){
+            System.out.println(n);
+            printNo(n-1);
+        }
+    }
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        printNo(n);
+    }
+}
